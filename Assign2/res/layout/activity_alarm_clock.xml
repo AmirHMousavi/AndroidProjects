@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AlarmClock" >
+
+    <Button
+        android:id="@+id/cacelAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="112dp"
+        android:onClick="stopTheAlarm"
+        android:text="cancel alarm 1" />
+
+    <Button
+        android:id="@+id/setAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cacelAlarm"
+        android:layout_alignBottom="@+id/cacelAlarm"
+        android:layout_alignParentRight="true"
+        android:onClick="setTheAlarm"
+        android:text="set alarm 1" />
+
+    <Button
+        android:id="@+id/setAlarm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/setAlarm"
+        android:layout_below="@+id/setAlarm"
+        android:layout_marginTop="14dp"
+        android:text="set alarm 2" />
+
+    <Button
+        android:id="@+id/cancelAlarm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/setAlarm2"
+        android:layout_alignLeft="@+id/cacelAlarm"
+        android:text="cancel alarm 2" />
+
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
+
+    <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/setAlarm"
+        android:text="DigitalClock"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+</RelativeLayout>

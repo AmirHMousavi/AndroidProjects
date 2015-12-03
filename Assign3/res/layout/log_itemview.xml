@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/date"
+        android:text="name"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/calltype"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Name"
+        android:src="@drawable/incomingcall" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/calltype"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="date"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/calltype"
+        android:layout_toRightOf="@+id/calltype"
+        android:text="number"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/calltime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/number"
+        android:layout_alignBottom="@+id/number"
+        android:layout_alignParentRight="true"
+        android:text="time" />
+
+</RelativeLayout>

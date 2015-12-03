@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+<!-- Assign1 String ****************************************** -->
+
+    <string name="app_name">Assign1</string>
+    <string name="action_settings">Settings</string>
+   
+    <!-- BMI -->
+    
+    <string name="length">length (cm):</string>
+    <string name="weight">weight (Kg):</string>
+    <string name="buttonBMI">calculate BMI</string>
+    <string name="result">~~~~</string>
+    <string name="reset">reset</string>
+    
+    <!-- Color Display -->
+     
+    <string name="buttonColor">Display Color</string>
+    <string name="red">Red:   </string>
+    <string name="green">Green:  </string>
+    <string name="blue">Blue:  </string>
+    
+    
+    <!-- my Countries -->
+   
+    <string name="button1">Add Country</string>
+    <string name="title_activity_insert_country">InsertCountry</string>
+    <string name="country">Insert Country:</string>
+    <string name="year">Insert Year:</string>
+    <string name="button2">Add</string>
+    
+    <!-- Random -->
+    
+    
+    <string name="btnName">New Random</string>
+    <string name="startInt">100</string>
+    
+    <!-- Vaxjo weather -->
+    
+    <string name="location">Växjö</string>
+
+</resources>

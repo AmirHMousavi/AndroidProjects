@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lnureader"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.lnureader.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.lnureader.AddChannel"
+            android:label="@string/title_activity_add_channel"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.example.lnureader.NewsFeeds"
+            android:label="@string/title_activity_news_feeds"
+            android:parentActivityName="com.example.lnureader.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.lnureader.MainActivity" />
+        </activity>
+
+        <!-- widget part ************************** -->
+        <receiver
+            android:name="com.example.lnureader.widget.StackWidgetProvider"
+            android:label="LNUreader" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/stackwidgetinfo" />
+        </receiver>
+
+        <service
+            android:name="com.example.lnureader.widget.StackWidgetService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+        
+        
+        <activity
+            android:name="com.example.lnureader.widget.StackWidgetConfig"
+            android:label="@string/title_activity_stack_widget_config" 
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter >
+                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <!-- ************************************************ -->
+        
+    </application>
+
+</manifest>

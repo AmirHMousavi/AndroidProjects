@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_ADD"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="ifRoom"
+        android:title="@string/button1_country"/>
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:showAsAction="ifRoom"
+        android:title="@string/sortOption">
+        <menu>
+            <item
+                android:id="@+id/menuSortCountry"
+                android:title="@string/sortByCountry"/>
+            <item
+                android:id="@+id/menuSortYear"
+                android:title="@string/sortByYear"/>
+            <item
+                android:id="@+id/menuSettings"
+                android:title="@string/country_setting"/>
+        </menu>
+    </item>
+
+</menu>

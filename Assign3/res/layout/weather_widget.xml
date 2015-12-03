@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_shape" 
+    android:clickable="true">
+    
+    <ImageView
+        android:id="@+id/icon_image"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:maxHeight="60dp"
+        android:maxWidth="75dp"
+        android:src="@drawable/wi1" />
+
+    <TextView
+        android:id="@+id/item_rain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/icon_image"
+        android:layout_below="@+id/icon_image"
+        android:gravity="center"
+        android:text="rain in cm"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <TextView
+        android:id="@+id/item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/icon_image"
+        android:text="yyyy-mm-dd"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/item_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/item_date"
+        android:layout_below="@+id/item_date"
+        android:gravity="center"
+        android:text="time - time"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/iem_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_rain"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/item_date"
+        android:layout_below="@+id/item_period"
+        android:gravity="center"
+        android:text="temprature"
+        android:textColor="@android:color/holo_red_light"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_windSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/item_period"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/icon_image"
+        android:text="wind speed" 
+        android:textColor="@android:color/holo_orange_light"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/item_windDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iem_temp"
+        android:layout_alignLeft="@+id/item_windSpeed"
+        android:layout_alignParentRight="true"
+        android:text="wind direction" 
+        android:textColor="@android:color/holo_orange_light"
+        android:gravity="center"/>
+
+    <ImageButton
+        android:id="@+id/weather_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_windDirection"
+        android:src="@android:drawable/stat_notify_sync_noanim" />
+
+    <TextView
+        android:id="@+id/weather_cityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/weather_refresh"
+        android:layout_alignLeft="@+id/item_windDirection"
+        android:layout_alignTop="@+id/weather_refresh"
+        android:layout_toLeftOf="@+id/weather_refresh"
+        android:gravity="center"
+        android:text="cityName"
+        android:textColor="@android:color/black"
+        android:textSize="14dp" />
+    
+</RelativeLayout>

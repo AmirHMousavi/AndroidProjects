@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bright_pink">#FF007F</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#FF7F00</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="chartreuse">#7FFF00</color>
+    <color name="green">#00FF00</color>
+    <color name="spring_green">#00FF7F</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="azure">#007FFF</color>
+    <color name="blue">#0000FF</color>
+    <color name="violet">#7F00FF</color>
+    <color name="magenta">#FF00FF</color>
+
+    <string-array name="colors_value">
+        <item>#FF007F</item>
+        <item>#FF0000</item>
+        <item>#FF7F00</item>
+        <item>#FFFF00</item>
+        <item>#7FFF00</item>
+        <item>#00FF00</item>
+        <item>#00FF7F</item>
+        <item>#00FFFF</item>
+        <item>#007FFF</item>
+        <item>#0000FF</item>
+        <item>#7F00FF</item>
+        <item>#FF00FF</item>
+    </string-array>
+    <string-array name="array_colors">
+        <item>bright_pink</item>
+        <item>red</item>
+        <item>orange</item>
+        <item>yellow</item>
+        <item>chartreuse</item>
+        <item>green</item>
+        <item>spring_green</item>
+        <item>cyan</item>
+        <item>azure</item>
+        <item>blue</item>
+        <item>violet</item>
+        <item>magenta</item>
+    </string-array>
+    
+    <string-array name="fontSize_array">
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>
+        <item>32</item>
+    </string-array>
+
+</resources>

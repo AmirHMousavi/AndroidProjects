@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Assign3</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_weather_widget_configure">Weather_widget_configure</string>
+    <string name="title_activity_weather_config">Weather_config</string>
+    <string name="title_activity_call_log__main">Call Log</string>
+
+</resources>
